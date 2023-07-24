@@ -1,0 +1,719 @@
+@font-face {
+    font-family: montserrat;
+    src: url(/CSS/Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: satisfy;
+    src: url(/CSS/Fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(/CSS/Fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: josefin;
+    src: url(/CSS/Fonts/JosefinSans-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #000;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation Bar */
+
+nav {
+    width: 98%;
+    display: flex;
+    padding-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+nav ul li {
+    text-align: center;
+    float: left;
+}
+
+nav ul li a {
+    display: flex;
+    text-decoration: none;
+    padding: 1px 30px;
+    text-transform: uppercase;
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.main-img {
+    width: 450px;
+    height: 450px;
+    margin-top: 11em;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.content-img {
+    width: 600px;
+    height: 700px;
+    transform: translateX(0px);
+    animation: float 6s ease-out infinite;
+    object-fit: cover;
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* logo */
+
+.logo {
+    width: 120px;
+    height: 120px;
+}
+
+/* Introductory */
+
+.intro {
+    width: 700px;
+    height: 600px;
+    margin-top: 4em;
+    display: flex;
+    position: relative;
+    float: left;
+    margin-left: 4em;
+}
+
+h1 {
+    color: rgb(167, 0, 9);
+    font-size: 80px;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: poppins;
+    text-align: center;
+    line-height: 8vh;
+}
+
+.details {
+    color: #fff;
+    padding-top: 11em;
+    padding-left: 2em;
+    font-size: 24px;
+    font-family: montserrat;
+    position: absolute;
+    text-transform: capitalize;
+}
+
+.second-details {
+    color: #fff;
+    padding-top: 14em;
+    padding-left: 2em;
+    font-size: 24px;
+    font-family: montserrat;
+    position: absolute;
+    text-transform: capitalize;
+}
+
+.headphone-name {
+    color: #fff;
+    padding-top: 2.5em;
+    float: left;
+    padding-left: 4.5rem;
+    position: absolute;
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family: montserrat;
+    font-weight: bold;
+}
+
+/* buttons */
+.shop {
+    width: 400px;
+    height: 70px;
+    border: none;
+    outline: none;
+    background-color: #f00;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 15em;
+    margin-left: 1.7em;
+    font-family: montserrat;
+    font-weight: bold;
+    transition: 0.75s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05)
+}
+
+.icons-4 {
+    color: #fff;
+    font-size: 30px;
+}
+
+h3 {
+    color: #fff;
+    font-size: 40px;
+    font-family: poppins;
+    margin-top: 40%;
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 40%;
+}
+
+/* cards */
+.slides {
+    width: 90%;
+    height: 80%;
+    border: 2px solid rgb(80, 80, 80);
+    position: absolute;
+    margin-top: 45%;
+    margin-left: 4em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #000;
+    box-shadow: 2em 2em 2em 0em rgb(15, 15, 15);
+}
+
+.product-card-1 {
+    border: 1px solid #fef;
+    width: 300px;
+    height: 520px;
+    position: relative;
+    background: #fef;
+}
+
+.product-card-2 {
+    border: 1px solid #fef;
+    width: 300px;
+    height: 520px;
+    position: relative;
+    background: #fff;
+}
+
+.product-card-3 {
+    border: 1px solid #fef;
+    width: 300px;
+    height: 520px;
+    position: relative;
+    background: #fff;
+}
+
+.product-card-4 {
+    border: 1px solid #fef;
+    width: 300px;
+    height: 520px;
+    position: relative;
+    background: #fff;
+}
+
+.product-img-1 {
+    margin-top: 5px;
+    width: 280px;
+    height: 295px;
+    padding-left: 20px;
+    animation: floating 6s ease-out infinite;
+    object-fit: contain;
+    background: #fff;
+    margin-left: 0px;
+}
+
+.product-img-2 {
+    width: 340px;
+    height: 310px;
+    margin-left: -23px;
+    animation: floating 6s ease-out infinite;
+    object-fit: contain;
+}
+
+.product-img-3 {
+    width: 300px;
+    height: 310px;
+    padding-left: 30px;
+    animation: floating 6s ease-out infinite;
+    object-fit: contain;
+}
+
+.product-img-4 {
+    width: 300px;
+    height: 310px;
+    animation: floating 6s ease-out infinite;
+    object-fit: contain;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.inside {
+    width: 300px;
+    height: 236px;
+    border: 1px solid green;
+    margin-left: -1px;
+    margin-top: -18px;
+    background: rgb(23, 24, 28);
+}
+
+.product-name-1 {
+    color: #fef;
+    font-size: 28px;
+    font-family: montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 53px;
+}
+
+.product-name-2 {
+    color: #fef;
+    font-size: 28px;
+    font-family: montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.inside.inside-2 {
+    width: 300px;
+    height: 210px;
+    margin-left: -1px;
+    margin-top: -5px;
+    background: rgb(23, 24, 28);
+}
+
+.product-name-3 {
+    color: #fef;
+    font-size: 28px;
+    font-family: montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.inside.inside-3 {
+    width: 300px;
+    height: 210px;
+    margin-left: -1px;
+    margin-top: -4px;
+    background: rgb(23, 24, 28);
+}
+
+.product-name-4 {
+    color: #fef;
+    font-size: 28px;
+    font-family: montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.inside.inside-4 {
+    width: 300px;
+    height: 210px;
+    margin-left: -1px;
+    margin-top: -4px;
+    background: rgb(23, 24, 28);
+}
+
+.product-price-1 {
+    color: #fef;
+    font-size: 26px;
+    font-family: josefin;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: -1em;
+}
+
+.product-price-2 {
+    color: #fef;
+    font-size: 26px;
+    font-family: josefin;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: -1em;
+}
+
+.product-price-3 {
+    color: #fef;
+    font-size: 26px;
+    font-family: josefin;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: -1em;
+}
+
+.product-price-4 {
+    color: #fef;
+    font-size: 26px;
+    font-family: josefin;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: -1em;
+}
+
+.ordering {
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 9px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.9s ease-in-out;
+    position: absolute;
+}
+
+.ordering:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.ordering-2 {
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 9px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.9s ease-in-out;
+    position: absolute;
+}
+
+.ordering-2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.ordering-3 {
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 9px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.9s ease-in-out;
+    position: absolute;
+}
+
+.ordering-3:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.ordering-4 {
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 9px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: 0.9s ease-in-out;
+    position: absolute;
+}
+
+.ordering-4:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* About me */
+h6 {
+    color: #fff;
+    font-size: 40px;
+    font-family: poppins;
+    margin-top: 92%;
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 40%;
+}
+
+.about-me {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    margin-top: 95%;
+    margin-left: 4%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1%;
+}
+
+.sec-intro {
+    width: 30%;
+    height: 70%;
+    padding-left: 50px;
+}
+
+.me {
+    color: rgb(167, 0, 9);
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: poppins;
+    position: absolute;
+    margin-top: 40px;
+}
+
+.talks {
+    color: #fff;
+    font-family: montserrat;
+    font-size: 22px;
+    margin-top: 105px;
+}
+
+.profile-pic {
+    width: 30%;
+    height: 50%;
+}
+
+.prof-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-top: 7px;
+}
+
+.personal-details {
+    width: 30%;
+    height: 70%;
+    padding-left: 50px;
+}
+
+.my-details {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: poppins;
+    font-weight: bolder;
+}
+
+.name {
+    color: #f00;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: josefin;
+    margin-top: -30px;
+    position: absolute;
+}
+
+.fname {
+    color: #fff;
+    font-family: montserrat;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top: -5px;
+}
+
+.age {
+    color: #f00;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: josefin;
+}
+
+.myage {
+    color: #fff;
+    font-family: montserrat;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top: -2px;
+}
+
+.location {
+    color: #f00;
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family: josefin;
+}
+
+.locate {
+    color: #fff;
+    font-family: montserrat;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-top: -5px;
+}
+
+/* contact */
+h5 {
+    color: #fff;
+    font-size: 40px;
+    font-family: poppins;
+    margin-top: 140%;
+    position: absolute;
+    text-transform: uppercase;
+    margin-left: 40%;
+}
+
+/* contact buttons */
+.contact-btn {
+    width: 60%;
+    height: 30%;
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 15%;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+.instagram {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: 0.85s ease-in-out;
+}
+
+.instagram:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.github {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: 0.85s ease-in-out;
+}
+
+.github:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.twitter {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    transition: 0.85s ease-in-out;
+}
+
+.twitter:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.linkedin {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background: rgb(10, 102, 194);
+    transition: 0.85s ease-in-out;
+}
+
+.linkedin:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+/* social media styled icons */
+.insta {
+    font-size: 45px;
+    background-image: linear-gradient(30deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.git {
+    font-size: 45px;
+    color: #333;
+}
+
+.twit {
+    font-size: 45px;
+    color: #00acee;
+}
+
+.linked {
+    font-size: 55px;
+    color: #fff;
+}
