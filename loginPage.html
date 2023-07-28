@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flex form </title>
+    <link rel="stylesheet" href="loginPage.css">
+    <script src="loginPage.js"></script>
+</head>
+<form onsubmit="return login()">
+    <h1> Login </h1>
+    <div class="floating-form">
+        <input type="email" name="email" id="email" autocomplete="off" />
+        <label for="email">email</label>
+    </div>
+
+    <div class="floating-form">
+        <input type="password" name="uname" id="password" required />
+        <label for="password">password</label>
+    </div>
+
+    <div class="floating-btn">
+        <input type="submit" value="login">
+    </div>
+    <p> already registered? <a href="signUp.html"> signup </a></p>
+</form>
+
+</body>
+
+</html>

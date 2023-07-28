@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up </title>
+    <link rel="stylesheet" href="signUp.css">
+    <script src="signUp.js"></script>
+</head>
+<body>
+    <form onsubmit="signUp()">
+        <h1> register </h1>
+        <div class="floating-form">
+            <input type="text" name="fname" id="fname" required />
+            <label for="fullname"> full name </label>
+        </div>
+
+        <div class="floating-form">
+            <input type="text" name="uname" id="uname" required />
+            <label for="username"> username </label>
+        </div>
+
+        <div class="floating-form">
+            <input type="email" name="email" id="email" required autocomplete="off" />
+            <label for="email"> email </label>
+        </div>
+
+        <div class="floating-form">
+            <input type="password" name="password" id="password" required />
+            <label for="password"> password </label>
+        </div>
+    
+        <div class="floating-btn">
+            <input type="submit" value="Signup">
+        </div>
+
+        <a href="loginPage.html"> go back </a>
+    </form>
+</body>
+</html>

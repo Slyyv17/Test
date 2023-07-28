@@ -1,0 +1,127 @@
+@font-face {
+    font-family: poppins;
+    src: url(CSS/Fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: office;
+    src: url(css/Fonts/YsabeauOffice-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+form {
+    height: 62vh;
+    align-content: center;
+    position: relative;
+    background: transparent;
+    width: 40vw;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px ridge #fef;
+    border-radius: 10px;
+    padding: 0 0 0 8%;
+    margin: 10% 0 0 30%;
+    box-shadow: 4px 4px 12px #000;
+}
+
+h1 {
+    padding-top: 15px;
+    color: #fff;
+    font-family: poppins;
+    letter-spacing: 4px;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 22%;
+}
+
+.floating-form {
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.floating-form input {
+    width: 70%;
+    border: none;
+    border-bottom: 1px inset #888;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #fef;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.floating-form label {
+    position: absolute;
+    text-transform: capitalize;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    color: rgb(78, 114, 214);
+    pointer-events: none;
+    font-family: office;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.floating-form input:focus {
+    border-bottom: 1px solid #fef;
+}
+
+.floating-form input:focus+label,
+.floating-form input:valid+label {
+    top: -20px;
+    font-size: 16px;
+    color: rgb(112, 146, 240);
+}
+
+.floating-btn input[type="submit"] {
+    height: 50px;
+    width: 150px;
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    margin-top: 1vh;
+    margin-left: 50%;
+    padding: 10px;
+    color: #fff;
+    border: 1px inset #111;
+    background: #1f51ff;
+    transition: all 0.95s ease-in-out;
+}
+
+.floating-btn input[type="submit"]:hover {
+    transform: scale3d(1.15, 1.10, 1.03);
+    cursor: pointer;
+    box-shadow: 0px 2px 4px 0px #1f51ff;
+}
+
+.floating-btn input[type="submit"]:active {
+    background-color: #ffffff06;
+}
+
+a {
+    position: absolute;
+    font-family: office;
+    font-size: 18px;
+    color: #fef;
+    text-decoration: none;
+    text-transform: capitalize;
+    align-items: flex-start;
+}
