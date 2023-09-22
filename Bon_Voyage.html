@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Website 2</title>
+    <link rel="stylesheet" href="Bon_Voyage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2 class="logo-name"> bon voyage </h2>
+        <!-- login icon -->
+        <a class="login" href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+        <ul class="mobile-mode">
+            <li><a href="Bon_Voyage.html"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-shop"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-users"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+        </ul>
+
+        <ul class="desktop-mode">
+            <li><a href="Bon_Voyage.html"> home </a></li>
+            <li><a href="#"> product </a></li>
+            <li><a href="#"> about us </a></li>
+            <li><a href="#"> contact </a></li>
+        </ul>
+    </nav>
+
+    <!-- First Section -->
+    <section>
+        <article class="first__sect">
+       
+            <h1> boost your style sense </h1>
+            <p class="description"> full price for different categories male collections, <br> female collections and accessories for men and women.
+
+            <div class="slide-container">
+                <div class="slide">
+                    <img src="Cloth_img/e5c904e6-3d99-4071-ae6b-15e998330f18.jpg" alt="" title="Men's Collection">
+                </div>
+            
+                <div class="slide">
+                    <img src="Cloth_img/Solid Shawl Collar Wrap Romper.jpg" alt="" title="Women's Collection">
+                </div>
+            
+                <div class="slide">
+                    <img src="Cloth_img/Geo Embossed Chain Square Bag.jpg" alt="" title="Accessories">
+                </div>
+            </div>
+
+            <button><a class="shop__now" href="#"> Shop Now <i class="fa-solid fa-bag-shopping"></i></a></button>
+        </article>
+
+        <!-- Second Section -->
+        <article class="sec__sect">
+            <p class="occasion"> Best Sales </p>
+            <div class="event__div">
+                <div class="items">
+                    <a href="#" class="design-link">
+                        <img class="designs" src="Cloth_img/Best Dinner Coctail Party Brown Suit for Men 2 Piece Jacket+Pants.jpg" alt="">
+                    </a>
+                    <label> Mens' collections </label>
+                    <i class="fa-solid fa-heart" onclick="changeColor()" id="heart"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <form action="#">
+                        <input type="button" class="first_btn" onclick="cartGo()" value="add to cart">
+                    </form>
+                </div>
+
+                <div class="items">
+                    <a href="#" class="design-link">
+                        <img class="designs"
+                            src="Cloth_img/A-line wedding dress Amalia, Satin wedding dress, Bridal gown, Ivory wedding dress,Sleeveles wedding dress.jpg"
+                            alt="">
+                    </a>
+                <label> ladies collections </label>
+                <i class="fa-solid fa-heart" onclick="changeColor()" id="heart"></i>
+                
+                <i class="fa-solid fa-share-nodes"></i>
+                <form action="#">
+                    <input type="button" class="first_btn" onclick="cartGoProd2()" value="add to cart">
+                </form>
+                </div>
+
+                <div class="items">
+                    <a href="#" class="design-link">
+                        <img class="designs" src="Cloth_img/Minimalist Square Bag.jpg" alt="">
+                    </a>
+                    <label class="accessories"> accessories </label>
+                    <i class="fa-solid fa-heart" onclick="changeColor()" id="heart"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                    <form action="#">
+                        <input type="button" class="first_btn" onclick="cartGoProd3()" value="add to cart">
+                    </form>
+                </div>
+                
+            </div>
+        </article>
+
+        <!-- Third Section -->
+        <article class="third__section">
+            <!-- Men's Collection -->
+            <p class="men__name"> men's collections </p>
+            <div class="men">
+                <div class="men__clothes">
+                    <!-- Front of the Image -->
+                    <div class="front">
+                        <img class="male-image-card" src="Cloth_img/BKc _HOLY CROSS_ Varsity.png" alt="">
+                    </div>
+
+                    <!-- Back of the Image -->
+                    <div class="back">
+                        <div class="back-title"> BKC Holy Cross Varsity </div>
+                        <hr>
+                        <div class="cloth-content">
+                            <p class="size"> size: 35 </p>
+                            <p class="cloth-price"> price: $30.65 </p>
+                        </div>
+
+                        <div class="icons1">
+                            <i class="fa-solid fa-heart heart-2" onclick="changeBgColor_2()" id="reacted-heart"></i>
+                            <i class="fa-solid fa-share-nodes share-nodes-2"></i>
+                        </div>
+
+                       <form action="#" class="form_second_btn">
+                        <input class="second_btn" type="button" onclick="orderBtn()" value="order">
+                       </form>
+                    </div>
+                </div>
+
+                <div class="men__clothes">
+                    <!-- Front of the Image -->
+                    <div class="front">
+                        <img class="male-image-card" src="Cloth_img/Man grey long coat- tweed Overcoat- Long Trench Coat- Man new Jacket- winter jacket-long jacket-tweed coat-customized coat-party wear coat.jfif" alt="">
+                    </div>
+
+                    <!-- Back of the Image -->
+                    <div class="back">
+                        <div class="back-title-two"> Long Grey Coat </div>
+                        <hr class="hr-sec">
+                        <div class="cloth-content">
+                            <p class="sec-size"> size: 31 </p>
+                            <p class="cloth-price-two"> price: $75.25 </p>
+                        </div>
+
+                        <div class="icons1">
+                            <i class="fa-solid fa-heart heart-3" onclick="changeBgColor_3()" id="reacted-heart"></i>
+                            <i class="fa-solid fa-share-nodes share-nodes-3"></i>
+                        </div>
+
+                        <form action="#" class="form_third_btn">
+                            <input class="third_btn" type="button" onclick="orderBtn_2()" value="order">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="men__clothes">
+                    <!-- Front of the Image -->
+                    <div class="front">
+                        <img class="male-image-card" src="Cloth_img/Michael B_ Jordan by Ralph Lauren.jpg" alt="">
+                    </div>
+
+                    <!-- Back of the Image -->
+                    <div class="back">
+                        <div class="back-title-three"> All Black </div>
+                        <hr class="hr-third">
+
+                        <div class="cloth-content">
+                            <p class="third-size"> size: 34 </p>
+                            <p class="cloth-price-three"> price: $108.00 </p>
+                        </div>
+
+                        <div class="icons1">
+                            <i class="fa-solid fa-heart heart-3" onclick="changeBgColor_3()" id="reacted-heart"></i>
+                            <i class="fa-solid fa-share-nodes share-nodes-3"></i>
+                        </div>
+
+                        <form action="#" class="form_third_btn">
+                            <input class="third_btn" type="button" onclick="orderBtn_2()" value="order">
+                        </form>
+                    </div>
+
+                </div>
+                <div class="men__clothes">
+                    <!-- Front of the Image -->
+                    <div class="front">
+                        <img class="male-image-card" src="Cloth_img/Classy mens fashion looks.jpg" alt="">
+                    </div>
+
+                    <!-- Back of the Image -->
+                    <div class="back">
+                        <div class="back-title-four"> Navy Blue Coat </div>
+                        <hr class="hr-fourth">
+
+                        <div class="cloth-content">
+                            <p class="fourth-size"> size: 32 </p>
+                            <p class="cloth-price-fourth"> price: $90.55 </p>
+                        </div>
+
+                        <div class="icons1">
+                            <i class="fa-solid fa-heart heart-3" onclick="changeBgColor_3()" id="reacted-heart"></i>
+                            <i class="fa-solid fa-share-nodes share-nodes-3"></i>
+                        </div>
+
+                        <form action="#" class="form_third_btn">
+                            <input class="third_btn" type="button" onclick="orderBtn_2()" value="order">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script src="Bon_Voyage.js"></script>
+</body>
+</html>
