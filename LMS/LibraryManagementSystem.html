@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="LibraryManagementSystem.css">
+</head>
+
+<body>
+
+    <h1>Library Management System</h1>
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="userID">User ID:</label>
+        <input type="password" id="userID" required>
+
+        <button type="button" onclick="createAccount()">Create Account</button>
+    </form>
+
+    <form id="libraryForm" style="display:none;">
+        <label for="bookAction">Select Action:</label>
+        <select id="bookAction">
+            <option value="request">Request Book</option>
+            <option value="issue">Issue Book</option>
+            <option value="cancel">Cancel Book Order</option>
+            <option value="pay">Pay Fine to Renew Book</option>
+        </select>
+
+        <label for="bookTitle">Book Title:</label>
+        <select id="bookTitle">
+            <option value="Select"> </option>
+            <option value="Fundamental of Christian Faith">Fundamental of Christian Faith - $100 </option>
+            <option value="Environmental and Sustainable Development">Environmental and Sustainable Development - $125 </option>
+            <option value="Fundamental of Software Engineering">Fundamental of Software Engineering - $225 </option>
+            <option value="Introduction to Java">Introduction to Java - $220 </option>
+            <option value="Operating Systems">Operating Systems - $120 </option>
+            <option value="Hardware I">Hardware I - $115 </option>
+            <option value="Basic Concepts of Accounting">Basic Concepts of Accounting - $100 </option>
+            <option value="Software Maintenance and Evolution">Software Maintenance and Evolution - $165 </option>
+            <option value="Introduction to Agriculture">Introduction to Agriculture - $85 </option>
+        </select>
+
+        <button type="button" onclick="performAction()"> pay </button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="LibraryManagementSystem.js"></scripts>
+
+</body>
+
+</html>
