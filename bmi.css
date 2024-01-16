@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ff91a4;
+    --bg-color: #da2c43;
+    --sec-color: #fff;
+    --pri-ff: "Balsamiq Sans", sans-serif;
+    --sec-ff: "Amiko",
+        sans-serif;
+}
+
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: rgb(255, 159, 175);
+}
+
+p {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    height: 15em;
+    width: 15em;
+    position: fixed;
+    top: 11%;
+    left: 42%;
+}
+
+.logo {
+    width: 15em;
+    height: 15em;
+    left: 43%;
+    top: 11%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -5;
+}
+
+.clouds {
+    width: 20em;
+    height: 18em;
+}
+
+.one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(0px);
+    animation: float 12s ease-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(33em);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.two {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    transform: translateX(0px);
+    animation: floatTwo 13s ease-out infinite;
+}
+
+@keyframes floatTwo {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(32em);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.three {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    transform: translateX(0px);
+    animation: floatThree 15s ease-out infinite;
+}
+
+@keyframes floatThree {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-33em);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.four {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    transform: translateX(0px);
+    animation: floatFour 16s ease-out infinite;
+}
+
+@keyframes floatFour {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-32em);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.five {
+    position: absolute;
+    top: 38%;
+    left: 51%;
+    transform: translateX(0px);
+    animation: floatFive 17s ease-out infinite;
+}
+
+@keyframes floatFive {
+    0% {
+        transform: translateX(1px);
+    }
+
+    25% {
+        transform: translateX(39em);
+    }
+
+    50% {
+        transform: translateX(1px);
+    }
+
+    75% {
+        transform: translateX(-42em);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.container {
+    height: 22em;
+    width: 30em;
+    border: 2px solid var(--sec-color);
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15em;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+h1 {
+    margin-top: 0.7em;
+    font-family: var(--pri-ff);
+    text-shadow: 2px 1px 2px #ff627c;
+    color: var(--sec-color);
+    transition: transform 600ms;
+}
+
+h1:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+span {
+    color: var(--bg-color);
+}
+
+label {
+    padding-top: 1em;
+    font-family: var(--sec-ff);
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: var(--bg-color);
+}
+
+input,
+button {
+    margin-top: 1em;
+}
+
+input {
+    width: 19em;
+    height: 4em;
+    border-radius: 1em;
+    border: 0;
+    outline: none;
+    caret-color: var(--bg-color);
+    padding-left: 1em;
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder {
+    color: var(--bg-color);
+    text-transform: capitalize;
+}
+
+button {
+    margin-bottom: 1em;
+    height: 4em;
+    width: 8em;
+    background-color: var(--bg-color);
+    color: var(--sec-color);
+    border: 0;
+    outline: none;
+    font-family: cursive;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-radius: 1em;
+    transition: background-color, color 600ms,
+        transform 500ms;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+}
+
+#output {
+    font-size: 1rem;
+    font-family: "poppins", sans-serif;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+    color: var(--sec-color);
+}
+
+/* mobile screen */
+@media only screen and (max-width: 768px) {
+    p {
+        display: none;
+    }
+    .logo {
+        width: 15em;
+        height: 15em;
+        left: 20%;
+        top: 10.4%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: -5;
+    }
+
+    img {
+        height: 15em;
+        width: 15em;
+        position: fixed;
+        top: 11%;
+        left: 20%;
+    }
+
+    .container {
+        width: 23em;
+        height: 27em;
+    }
+
+    h1 {
+        margin-top: 0.7em;
+        font-family: var(--pri-ff);
+        text-shadow: 2px 1px 2px #ff627c;
+        color: var(--sec-color);
+        transition: transform 600ms;
+        text-align: center;
+    }
+
+    input {
+        font-size: 1rem;
+        color: var(--bg-color);
+    }
+
+    #output {
+        font-size: 1.2rem;
+    }
+}
+
+/* tablet & ipads view */
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    p {
+        display: none;
+    }
+    
+    .container {
+        width: 50em;
+        height: 37em;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    label {
+        font-size: 2rem;
+    }
+
+    input {
+        font-size: 1.4rem;
+    }
+    
+    button {
+        font-size: 1.6rem;
+    }
+
+    #output {
+        font-size: 1.9rem;
+    }
+    
+    img {
+        height: 19em;
+        width: 19em;
+        position: fixed;
+        top: 4%;
+        left: 33%;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    p {
+        font-size: 0.5rem;
+    }
+}
